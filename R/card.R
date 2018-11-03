@@ -69,7 +69,7 @@ card_color <- function(card = card_list(), fourColor = TRUE) {
 card_html <- function(card = card_list(), size = 172, fourColor = TRUE) {
   unicode_html(
     card_unicode(card), size,
-    style = paste0("px; color:", card_color(card, fourColor))
+    style = paste0("color:", card_color(card, fourColor))
   )
 }
 

@@ -65,6 +65,6 @@ suit_html <- function(suit = suit_list(), size = 172, fourColor = TRUE, fill = T
   suit <- match.arg(suit)
   unicode_html(
     suit_unicode(suit, fill), size,
-    style = paste0("px; color:", suit_color(suit, fourColor))
+    style = paste0("color:", suit_color(suit, fourColor))
   )
 }
