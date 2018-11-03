@@ -1,0 +1,20 @@
+Package: suitr
+Type: Package
+Title: This Package Makes It Easy to Create Cards in R Either for Printing in 
+  The Console or for Html Export
+Version: 0.1.0
+Author: Gregor de Cillia
+Authors@R: c(person("Gregor", "de Cillia", role = c("aut", "cre"),
+                    email = "de.cillia.gregor@gmail.com"))
+Maintainer: Gregor de Cillia <de.cillia.gregor@gmail.com>
+Description: A collection of converter functions to obtain the unicode representation
+  of playing cards, chess pieces and more. The resulting strigs can also converted
+  into browsable html objects.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: magrittr, htmltools
+Suggests: crayon
+URL: https://www.github.com/GregorDeCillia/suitr
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 6.1.0

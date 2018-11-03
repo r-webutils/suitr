@@ -1,0 +1,104 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  out.width = "100%"
+)
+```
+
+# suitr <img src="man/figures/logo.png" align="right" alt=""/>
+
+This package makes it easy to create cards in R either for printing in the console or for html export. The logic is based aroud the unicode representation
+of cards (and other objects) which are wrapped in a span container.
+
+## Installation
+
+You can install suitr from github via `install_github()`
+
+``` r
+devtools::install_github("GregorDeCillia/suitr")
+```
+
+## Cards
+
+Cards are always represented by strings like `"Kc"` or `"7s"`. They
+can be converted into HTML via `card_html()`.
+
+```{r example}
+library(suitr)
+span(card_html("Jh"), card_html("As"), card_html("Tc"), card_html("2d"))
+```
+
+`card_unicode()` converts cards into a unicode representation which means they can be printed directly into the console.
+
+```{r}
+cat(card_unicode("Ad"))
+```
+
+suitr uses a four color deck by default. This behavior can be changed with
+the parameter `fourColor`.
+
+```{r}
+card_list()
+
+card_list() %>% lapply(card_html, size = 50) %>% span()
+card_list() %>% lapply(card_html, size = 50, fourColor = FALSE) %>% span()
+```
+
+## Suits
+
+It is also possible to get the unicode representation of the suits symbols
+and export them into html.
+
+```{r}
+suit_list()
+suit_list() %>% lapply(suit_html) %>% span()
+suit_list() %>% lapply(suit_html, fill = FALSE) %>% span()
+suit_list() %>% sapply(suit_unicode) %>% cat()
+```
+
+## Special cards
+
+Tere are currently `r length(card_specials())` "special" cards implemented which
+do not match the rank-suit pattern of the cards above. Those are wrapped into 
+a named list which can be obtained with `card_specials()`.
+
+```{r}
+names(card_specials())
+card_specials() %>% lapply(unicode_html, style = "color: blue;") %>% span()
+```
+
+
+## Dice
+
+```{r}
+1:6 %>% lapply(dice_html, size = 140) %>% span()
+```
+
+## Chess
+
+```{r}
+pieces_list()
+pieces_list() %>% lapply(chess_html, size = 140) %>% span()
+pieces_list() %>% lapply(chess_html, color = "black", size = 140) %>% span()
+```
+
+## Mahjong
+
+```{r}
+mahjong_list()[1:4]
+mahjong_list() %>% lapply(mahjong_html, size = 68) %>% span()
+```
+
+## Domino
+
+```{r}
+span(domino_html(4, 5), domino_html(0, 6), domino_html(6, 2, horizontal = FALSE))
+```
+
