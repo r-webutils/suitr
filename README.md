@@ -121,7 +121,7 @@ pieces_list() %>% lapply(chess_html, size = 140) %>% span()
 pieces_list() %>% lapply(chess_html, color = "black", size = 140) %>% span()
 ```
 
-![](README_figures/pieces_white.png)
+![](README_figures/pieces_black.png)
 
 Mahjong
 -------
