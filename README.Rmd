@@ -30,10 +30,12 @@ devtools::install_github("GregorDeCillia/suitr")
 Cards are always represented by strings like `"Kc"` or `"7s"`. They
 can be converted into HTML via `card_html()`.
 
-```{r example}
+```{r example, results='hide'}
 library(suitr)
 span(card_html("Jh"), card_html("As"), card_html("Tc"), card_html("2d"))
 ```
+
+![](README_figures/JhAsTc2d.png)
 
 `card_unicode()` converts cards into a unicode representation which means they can be printed directly into the console.
 
@@ -46,10 +48,19 @@ the parameter `fourColor`.
 
 ```{r}
 card_list()
+```
 
+```{r, results="hide"}
 card_list() %>% lapply(card_html, size = 50) %>% span()
+```
+
+![](README_figures/deck_4c.png)
+
+```{r, results = "hide"}
 card_list() %>% lapply(card_html, size = 50, fourColor = FALSE) %>% span()
 ```
+
+![](README_figures/deck_2c.png)
 
 ## Suits
 
@@ -58,8 +69,21 @@ and export them into html.
 
 ```{r}
 suit_list()
+```
+
+```{r, results='hide'}
 suit_list() %>% lapply(suit_html) %>% span()
+```
+
+![](README_figures/suits_filled.png)
+
+```{r, results='hide'}
 suit_list() %>% lapply(suit_html, fill = FALSE) %>% span()
+```
+
+![](README_figures/suits_unfilled.png)
+
+```{r}
 suit_list() %>% sapply(suit_unicode) %>% cat()
 ```
 
@@ -69,36 +93,58 @@ Tere are currently `r length(card_specials())` "special" cards implemented which
 do not match the rank-suit pattern of the cards above. Those are wrapped into 
 a named list which can be obtained with `card_specials()`.
 
-```{r}
+```{r, results='hide'}
 names(card_specials())
 card_specials() %>% lapply(unicode_html, style = "color: blue;") %>% span()
 ```
 
+![](README_figures/cards_special.png)
 
 ## Dice
 
-```{r}
+```{r, results='hide'}
 1:6 %>% lapply(dice_html, size = 140) %>% span()
 ```
+
+![](README_figures/dice.png)
 
 ## Chess
 
 ```{r}
 pieces_list()
+```
+
+```{r, results='hide'}
 pieces_list() %>% lapply(chess_html, size = 140) %>% span()
+```
+
+![](README_figures/pieces_white.png)
+
+
+```{r, results='hide'}
 pieces_list() %>% lapply(chess_html, color = "black", size = 140) %>% span()
 ```
+
+![](README_figures/pieces_white.png)
 
 ## Mahjong
 
 ```{r}
 mahjong_list()[1:4]
+```
+
+```{r, results='hide'}
 mahjong_list() %>% lapply(mahjong_html, size = 68) %>% span()
 ```
 
+![](README_figures/mahjong.png)
+
 ## Domino
 
-```{r}
+```{r, results='hide'}
 span(domino_html(4, 5), domino_html(0, 6), domino_html(6, 2, horizontal = FALSE))
 ```
+
+![](README_figures/domino.png)
+
 

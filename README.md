@@ -24,8 +24,7 @@ library(suitr)
 span(card_html("Jh"), card_html("As"), card_html("Tc"), card_html("2d"))
 ```
 
-<!--html_preserve-->
-<span> <span style="font-size: 172px;color:red">🂻</span> <span style="font-size: 172px;color:black">🂡</span> <span style="font-size: 172px;color:green">🃚</span> <span style="font-size: 172px;color:blue">🃂</span> </span><!--/html_preserve-->
+![](README_figures/JhAsTc2d.png)
 
 `card_unicode()` converts cards into a unicode representation which means they can be printed directly into the console.
 
@@ -42,19 +41,19 @@ card_list()
 #> [15] "5c" "5d" "6s" "6h" "6c" "6d" "7s" "7h" "7c" "7d" "8s" "8h" "8c" "8d"
 #> [29] "9s" "9h" "9c" "9d" "Ts" "Th" "Tc" "Td" "Js" "Jh" "Jc" "Jd" "Qs" "Qh"
 #> [43] "Qc" "Qd" "Ks" "Kh" "Kc" "Kd" "As" "Ah" "Ac" "Ad"
+```
 
+``` r
 card_list() %>% lapply(card_html, size = 50) %>% span()
 ```
 
-<!--html_preserve-->
-<span> <span style="font-size: 50px;color:black">🂢</span> <span style="font-size: 50px;color:red">🂲</span> <span style="font-size: 50px;color:green">🃒</span> <span style="font-size: 50px;color:blue">🃂</span> <span style="font-size: 50px;color:black">🂣</span> <span style="font-size: 50px;color:red">🂳</span> <span style="font-size: 50px;color:green">🃓</span> <span style="font-size: 50px;color:blue">🃃</span> <span style="font-size: 50px;color:black">🂤</span> <span style="font-size: 50px;color:red">🂴</span> <span style="font-size: 50px;color:green">🃔</span> <span style="font-size: 50px;color:blue">🃄</span> <span style="font-size: 50px;color:black">🂥</span> <span style="font-size: 50px;color:red">🂵</span> <span style="font-size: 50px;color:green">🃕</span> <span style="font-size: 50px;color:blue">🃅</span> <span style="font-size: 50px;color:black">🂦</span> <span style="font-size: 50px;color:red">🂶</span> <span style="font-size: 50px;color:green">🃖</span> <span style="font-size: 50px;color:blue">🃆</span> <span style="font-size: 50px;color:black">🂧</span> <span style="font-size: 50px;color:red">🂷</span> <span style="font-size: 50px;color:green">🃗</span> <span style="font-size: 50px;color:blue">🃇</span> <span style="font-size: 50px;color:black">🂨</span> <span style="font-size: 50px;color:red">🂸</span> <span style="font-size: 50px;color:green">🃘</span> <span style="font-size: 50px;color:blue">🃈</span> <span style="font-size: 50px;color:black">🂩</span> <span style="font-size: 50px;color:red">🂹</span> <span style="font-size: 50px;color:green">🃙</span> <span style="font-size: 50px;color:blue">🃉</span> <span style="font-size: 50px;color:black">🂪</span> <span style="font-size: 50px;color:red">🂺</span> <span style="font-size: 50px;color:green">🃚</span> <span style="font-size: 50px;color:blue">🃊</span> <span style="font-size: 50px;color:black">🂫</span> <span style="font-size: 50px;color:red">🂻</span> <span style="font-size: 50px;color:green">🃛</span> <span style="font-size: 50px;color:blue">🃋</span> <span style="font-size: 50px;color:black">🂭</span> <span style="font-size: 50px;color:red">🂽</span> <span style="font-size: 50px;color:green">🃝</span> <span style="font-size: 50px;color:blue">🃍</span> <span style="font-size: 50px;color:black">🂮</span> <span style="font-size: 50px;color:red">🂾</span> <span style="font-size: 50px;color:green">🃞</span> <span style="font-size: 50px;color:blue">🃎</span> <span style="font-size: 50px;color:black">🂡</span> <span style="font-size: 50px;color:red">🂱</span> <span style="font-size: 50px;color:green">🃑</span> <span style="font-size: 50px;color:blue">🃁</span> </span><!--/html_preserve-->
+![](README_figures/deck_4c.png)
 
 ``` r
 card_list() %>% lapply(card_html, size = 50, fourColor = FALSE) %>% span()
 ```
 
-<!--html_preserve-->
-<span> <span style="font-size: 50px;color:black">🂢</span> <span style="font-size: 50px;color:red">🂲</span> <span style="font-size: 50px;color:black">🃒</span> <span style="font-size: 50px;color:red">🃂</span> <span style="font-size: 50px;color:black">🂣</span> <span style="font-size: 50px;color:red">🂳</span> <span style="font-size: 50px;color:black">🃓</span> <span style="font-size: 50px;color:red">🃃</span> <span style="font-size: 50px;color:black">🂤</span> <span style="font-size: 50px;color:red">🂴</span> <span style="font-size: 50px;color:black">🃔</span> <span style="font-size: 50px;color:red">🃄</span> <span style="font-size: 50px;color:black">🂥</span> <span style="font-size: 50px;color:red">🂵</span> <span style="font-size: 50px;color:black">🃕</span> <span style="font-size: 50px;color:red">🃅</span> <span style="font-size: 50px;color:black">🂦</span> <span style="font-size: 50px;color:red">🂶</span> <span style="font-size: 50px;color:black">🃖</span> <span style="font-size: 50px;color:red">🃆</span> <span style="font-size: 50px;color:black">🂧</span> <span style="font-size: 50px;color:red">🂷</span> <span style="font-size: 50px;color:black">🃗</span> <span style="font-size: 50px;color:red">🃇</span> <span style="font-size: 50px;color:black">🂨</span> <span style="font-size: 50px;color:red">🂸</span> <span style="font-size: 50px;color:black">🃘</span> <span style="font-size: 50px;color:red">🃈</span> <span style="font-size: 50px;color:black">🂩</span> <span style="font-size: 50px;color:red">🂹</span> <span style="font-size: 50px;color:black">🃙</span> <span style="font-size: 50px;color:red">🃉</span> <span style="font-size: 50px;color:black">🂪</span> <span style="font-size: 50px;color:red">🂺</span> <span style="font-size: 50px;color:black">🃚</span> <span style="font-size: 50px;color:red">🃊</span> <span style="font-size: 50px;color:black">🂫</span> <span style="font-size: 50px;color:red">🂻</span> <span style="font-size: 50px;color:black">🃛</span> <span style="font-size: 50px;color:red">🃋</span> <span style="font-size: 50px;color:black">🂭</span> <span style="font-size: 50px;color:red">🂽</span> <span style="font-size: 50px;color:black">🃝</span> <span style="font-size: 50px;color:red">🃍</span> <span style="font-size: 50px;color:black">🂮</span> <span style="font-size: 50px;color:red">🂾</span> <span style="font-size: 50px;color:black">🃞</span> <span style="font-size: 50px;color:red">🃎</span> <span style="font-size: 50px;color:black">🂡</span> <span style="font-size: 50px;color:red">🂱</span> <span style="font-size: 50px;color:black">🃑</span> <span style="font-size: 50px;color:red">🃁</span> </span><!--/html_preserve-->
+![](README_figures/deck_2c.png)
 
 Suits
 -----
@@ -64,18 +63,19 @@ It is also possible to get the unicode representation of the suits symbols and e
 ``` r
 suit_list()
 #> [1] "s" "h" "c" "d"
+```
+
+``` r
 suit_list() %>% lapply(suit_html) %>% span()
 ```
 
-<!--html_preserve-->
-<span> <span style="font-size: 172px;color:black">♠</span> <span style="font-size: 172px;color:red">♥</span> <span style="font-size: 172px;color:green">♣</span> <span style="font-size: 172px;color:blue">♦</span> </span><!--/html_preserve-->
+![](README_figures/suits_filled.png)
 
 ``` r
 suit_list() %>% lapply(suit_html, fill = FALSE) %>% span()
 ```
 
-<!--html_preserve-->
-<span> <span style="font-size: 172px;color:black">♤</span> <span style="font-size: 172px;color:red">♡</span> <span style="font-size: 172px;color:green">♧</span> <span style="font-size: 172px;color:blue">♢</span> </span><!--/html_preserve-->
+![](README_figures/suits_unfilled.png)
 
 ``` r
 suit_list() %>% sapply(suit_unicode) %>% cat()
@@ -89,12 +89,10 @@ Tere are currently 3 "special" cards implemented which do not match the rank-sui
 
 ``` r
 names(card_specials())
-#> [1] "black joker" "white joker" "back"
 card_specials() %>% lapply(unicode_html, style = "color: blue;") %>% span()
 ```
 
-<!--html_preserve-->
-<span> <span style="font-size: 172px;color: blue;">🃏</span> <span style="font-size: 172px;color: blue;">🃟</span> <span style="font-size: 172px;color: blue;">🂠</span> </span><!--/html_preserve-->
+![](README_figures/cards_special.png)
 
 Dice
 ----
@@ -103,8 +101,7 @@ Dice
 1:6 %>% lapply(dice_html, size = 140) %>% span()
 ```
 
-<!--html_preserve-->
-<span> <span style="font-size: 140px;">⚀</span> <span style="font-size: 140px;">⚁</span> <span style="font-size: 140px;">⚂</span> <span style="font-size: 140px;">⚃</span> <span style="font-size: 140px;">⚄</span> <span style="font-size: 140px;">⚅</span> </span><!--/html_preserve-->
+![](README_figures/dice.png)
 
 Chess
 -----
@@ -112,18 +109,19 @@ Chess
 ``` r
 pieces_list()
 #> [1] "k" "q" "r" "b" "n" "p"
+```
+
+``` r
 pieces_list() %>% lapply(chess_html, size = 140) %>% span()
 ```
 
-<!--html_preserve-->
-<span> <span style="font-size: 140px;">♔</span> <span style="font-size: 140px;">♕</span> <span style="font-size: 140px;">♖</span> <span style="font-size: 140px;">♗</span> <span style="font-size: 140px;">♘</span> <span style="font-size: 140px;">♙</span> </span><!--/html_preserve-->
+![](README_figures/pieces_white.png)
 
 ``` r
 pieces_list() %>% lapply(chess_html, color = "black", size = 140) %>% span()
 ```
 
-<!--html_preserve-->
-<span> <span style="font-size: 140px;">♚</span> <span style="font-size: 140px;">♛</span> <span style="font-size: 140px;">♜</span> <span style="font-size: 140px;">♝</span> <span style="font-size: 140px;">♞</span> <span style="font-size: 140px;">♟</span> </span><!--/html_preserve-->
+![](README_figures/pieces_white.png)
 
 Mahjong
 -------
@@ -131,11 +129,13 @@ Mahjong
 ``` r
 mahjong_list()[1:4]
 #> [1] "east wind"  "south wind" "west wind"  "north wind"
+```
+
+``` r
 mahjong_list() %>% lapply(mahjong_html, size = 68) %>% span()
 ```
 
-<!--html_preserve-->
-<span> <span style="font-size: 68px;">🀀</span> <span style="font-size: 68px;">🀁</span> <span style="font-size: 68px;">🀂</span> <span style="font-size: 68px;">🀃</span> <span style="font-size: 68px;">🀄</span> <span style="font-size: 68px;">🀅</span> <span style="font-size: 68px;">🀆</span> <span style="font-size: 68px;">🀇</span> <span style="font-size: 68px;">🀈</span> <span style="font-size: 68px;">🀉</span> <span style="font-size: 68px;">🀊</span> <span style="font-size: 68px;">🀋</span> <span style="font-size: 68px;">🀌</span> <span style="font-size: 68px;">🀍</span> <span style="font-size: 68px;">🀎</span> <span style="font-size: 68px;">🀏</span> <span style="font-size: 68px;">🀐</span> <span style="font-size: 68px;">🀑</span> <span style="font-size: 68px;">🀒</span> <span style="font-size: 68px;">🀓</span> <span style="font-size: 68px;">🀔</span> <span style="font-size: 68px;">🀕</span> <span style="font-size: 68px;">🀖</span> <span style="font-size: 68px;">🀗</span> <span style="font-size: 68px;">🀘</span> <span style="font-size: 68px;">🀙</span> <span style="font-size: 68px;">🀚</span> <span style="font-size: 68px;">🀛</span> <span style="font-size: 68px;">🀜</span> <span style="font-size: 68px;">🀝</span> <span style="font-size: 68px;">🀞</span> <span style="font-size: 68px;">🀟</span> <span style="font-size: 68px;">🀠</span> <span style="font-size: 68px;">🀡</span> <span style="font-size: 68px;">🀢</span> <span style="font-size: 68px;">🀣</span> <span style="font-size: 68px;">🀤</span> <span style="font-size: 68px;">🀥</span> <span style="font-size: 68px;">🀦</span> <span style="font-size: 68px;">🀧</span> <span style="font-size: 68px;">🀨</span> <span style="font-size: 68px;">🀩</span> <span style="font-size: 68px;">🀪</span> </span><!--/html_preserve-->
+![](README_figures/mahjong.png)
 
 Domino
 ------
@@ -144,5 +144,4 @@ Domino
 span(domino_html(4, 5), domino_html(0, 6), domino_html(6, 2, horizontal = FALSE))
 ```
 
-<!--html_preserve-->
-<span> <span style="font-size: 172px;">🁒</span> <span style="font-size: 172px;">🀷</span> <span style="font-size: 172px;">🂏</span> </span><!--/html_preserve-->
+![](README_figures/domino.png)
