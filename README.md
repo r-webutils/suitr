@@ -145,3 +145,14 @@ span(domino_html(4, 5), domino_html(0, 6), domino_html(6, 2, horizontal = FALSE)
 ```
 
 ![](README_figures/domino.png)
+
+Draughts
+--------
+
+``` r
+span(draughts_html("white", "man"), draughts_html("white", "king"),
+     draughts_html("black", "man"), draughts_html("black", "king")) %>% browsable()
+```
+
+<!--html_preserve-->
+<span> <span style="font-size: 172px;">⛀</span> <span style="font-size: 172px;">⛁</span> <span style="font-size: 172px;">⛂</span> <span style="font-size: 172px;">⛃</span> </span><!--/html_preserve-->
