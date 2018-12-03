@@ -67,10 +67,13 @@ card_color <- function(card = card_list(), fourColor = TRUE) {
 #' @rdname card
 #' @export
 card_html <- function(card = card_list(), size = 172, fourColor = TRUE) {
-  unicode_html(
-    card_unicode(card), size,
-    style = paste0("color:", card_color(card, fourColor))
-  )
+  card %>%
+    card_htmlhex %>%
+    HTML %>%
+    unicode_html(
+      size,
+      style = paste0("color:", card_color(card, fourColor))
+    )
 }
 
 #' @rdname card
@@ -81,4 +84,15 @@ card_specials <- function() {
     `white joker` = "\uD83C\uDCDF",
     back = "\uD83C\uDCA0"
   )
+}
+
+#' @rdname card
+#' @export
+card_htmlhex <- function(card = card_list()) {
+  card <- match.arg(card)
+  suit_str <- switch(card_suit(card), s = "a", h = "b",
+                     d = "c", c = "d")
+  rank_str <- switch(card_rank(card), A = 1, K = "e", Q = "d",
+                     J = "b", T = "a", card_rank(card))
+  paste0("&#x1f0", suit_str, rank_str, ";")
 }

@@ -8,6 +8,7 @@
 \alias{card_color}
 \alias{card_html}
 \alias{card_specials}
+\alias{card_htmlhex}
 \alias{card_unicode}
 \title{decks of 52 cards}
 \usage{
@@ -24,6 +25,8 @@ card_color(card = card_list(), fourColor = TRUE)
 card_html(card = card_list(), size = 172, fourColor = TRUE)
 
 card_specials()
+
+card_htmlhex(card = card_list())
 
 card_unicode(card = card_list())
 }
