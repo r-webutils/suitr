@@ -18,11 +18,11 @@ card_suit(card = card_list())
 
 card_rank(card = card_list())
 
-card_style(card = card_list(), fourColor = TRUE)
+card_style(card = card_list(), four_color = TRUE)
 
-card_color(card = card_list(), fourColor = TRUE)
+card_color(card = card_list(), four_color = TRUE)
 
-card_html(card = card_list(), size = 172, fourColor = TRUE)
+card_html(card = card_list(), size = 172, four_color = TRUE)
 
 card_specials()
 
@@ -33,7 +33,7 @@ card_unicode(card = card_list())
 \arguments{
 \item{card}{a card. A list of availale cards can be found with \code{card_list()}}
 
-\item{fourColor}{should a four color deck be applied. This means that each suit will have
+\item{four_color}{should a four color deck be applied. This means that each suit will have
 it's own color (black, red, blue and green). Otherwise, use two colors (black and red).}
 
 \item{size}{the font-size to use}
@@ -49,7 +49,7 @@ card_list()
 card_rank("Jc")
 card_suit("7d")
 card_color("Ad")
-card_color("Ad", fourColor = FALSE)
+card_color("Ad", four_color = FALSE)
 
 # style cards either in the console or via HTML
 cat(card_unicode("5h"), "\\n")

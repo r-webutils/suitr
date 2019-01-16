@@ -14,7 +14,7 @@
 #' card_rank("Jc")
 #' card_suit("7d")
 #' card_color("Ad")
-#' card_color("Ad", fourColor = FALSE)
+#' card_color("Ad", four_color = FALSE)
 #'
 #' # style cards either in the console or via HTML
 #' cat(card_unicode("5h"), "\n")
@@ -52,27 +52,27 @@ card_rank <- function(card = card_list()) {
 
 #' @rdname card
 #' @export
-card_style <- function(card = card_list(), fourColor = TRUE) {
+card_style <- function(card = card_list(), four_color = TRUE) {
   requireNamespace("crayon")
-  color <- card_color(card, fourColor = fourColor)
+  color <- card_color(card = card, four_color = four_color)
   crayon::style(card_unicode(card), color)
 }
 
 #' @rdname card
 #' @export
-card_color <- function(card = card_list(), fourColor = TRUE) {
-  suit_color(card_suit(card), fourColor)
+card_color <- function(card = card_list(), four_color = TRUE) {
+  suit_color(card_suit(card), four_color)
 }
 
 #' @rdname card
 #' @export
-card_html <- function(card = card_list(), size = 172, fourColor = TRUE) {
+card_html <- function(card = card_list(), size = 172, four_color = TRUE) {
   card %>%
     card_htmlhex %>%
     HTML %>%
     unicode_html(
       size,
-      style = paste0("color:", card_color(card, fourColor))
+      style = paste0("color:", card_color(card, four_color))
     )
 }
 

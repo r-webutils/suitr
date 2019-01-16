@@ -49,6 +49,7 @@ chess_unicode <- function(piece = pieces_list(), color = c("white", "black")) {
 #' @rdname chess
 #' @inheritParams unicode_html
 #' @export
-chess_html <- function(piece = pieces_list(), color = c("white", "black"), size = 172) {
+chess_html <- function(piece = pieces_list(), color = c("white", "black"),
+                       size = 172) {
   chess_unicode(piece, color) %>% unicode_html(size)
 }

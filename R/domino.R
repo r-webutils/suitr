@@ -57,6 +57,7 @@ domino_unicode <- function(first = 0:6, second = 0:6, horizontal = TRUE) {
 #' @rdname domino
 #' @inheritParams unicode_html
 #' @export
-domino_html <- function(first = 0:6, second = 0:6, horizontal = TRUE, size = 172) {
+domino_html <- function(first = 0:6, second = 0:6, horizontal = TRUE,
+                        size = 172) {
   domino_unicode(first, second, horizontal) %>% unicode_html(size)
 }

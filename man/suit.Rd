@@ -12,11 +12,11 @@ suit_list()
 
 suit_unicode(suit = suit_list(), fill = TRUE)
 
-suit_color(suit = suit_list(), fourColor = TRUE)
+suit_color(suit = suit_list(), four_color = TRUE)
 
-suit_style(suit, fourColor = TRUE)
+suit_style(suit, four_color = TRUE)
 
-suit_html(suit = suit_list(), size = 172, fourColor = TRUE,
+suit_html(suit = suit_list(), size = 172, four_color = TRUE,
   fill = TRUE)
 }
 \arguments{
@@ -25,7 +25,7 @@ suit_html(suit = suit_list(), size = 172, fourColor = TRUE,
 \item{fill}{whether to use a filled suit symbol like \code{BLACK SPADE SUIT} or an
 unfilled one like \code{WHITE SPADE SUIT}}
 
-\item{fourColor}{should a four color deck be applied. This means that each suit will have
+\item{four_color}{should a four color deck be applied. This means that each suit will have
 it's own color (black, red, blue and green). Otherwise, use two colors (black and red).}
 
 \item{size}{the font-size to use}
@@ -39,7 +39,7 @@ suit_list()
 
 # determine matching colors for the suit
 suit_color("d")
-suit_color("d", fourColor = FALSE)
+suit_color("d", four_color = FALSE)
 
 # show suits either in the console or as HTML
 cat(suit_unicode("c"), "\\n")

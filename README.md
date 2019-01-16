@@ -35,7 +35,7 @@ cat(card_unicode("Ad"))
 #> 🃁
 ```
 
-suitr uses a four color deck by default. This behavior can be changed with the parameter `fourColor`.
+suitr uses a four color deck by default. This behavior can be changed with the parameter `four_color`.
 
 ``` r
 card_list()
@@ -52,7 +52,7 @@ card_list() %>% lapply(card_html, size = 50) %>% span()
 ![](man/figures/README_figures/deck_4c.png)
 
 ``` r
-card_list() %>% lapply(card_html, size = 50, fourColor = FALSE) %>% span()
+card_list() %>% lapply(card_html, size = 50, four_color = FALSE) %>% span()
 ```
 
 ![](man/figures/README_figures/deck_2c.png)
