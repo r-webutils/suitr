@@ -16,6 +16,7 @@ knitr::opts_chunk$set(
 
  [![Coverage status](https://codecov.io/gh/GregorDeCillia/suitr/branch/master/graph/badge.svg)](https://codecov.io/github/GregorDeCillia/suitr?branch=master)
  [![Travis build status](https://travis-ci.org/GregorDeCillia/suitr.svg?branch=master)](https://travis-ci.org/GregorDeCillia/suitr)
+ [![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/GregorDeCillia/suitr?branch=master&svg=true)](https://ci.appveyor.com/project/GregorDeCillia/suitr)
  
 This package makes it easy to create cards in R either for printing in the console or for html export. The logic is based aroud the unicode representation
 of cards (and other objects) which are wrapped in a span container.
