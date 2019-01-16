@@ -85,7 +85,7 @@
 <p>Cards are always represented by strings like <code>"Kc"</code> or <code>"7s"</code>. They can be converted into HTML via <code><a href="reference/card.html">card_html()</a></code>.</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" data-line-number="1"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/library">library</a></span>(suitr)</a>
 <a class="sourceLine" id="cb2-2" data-line-number="2"><span class="kw"><a href="https://www.rdocumentation.org/packages/htmltools/topics/builder">span</a></span>(<span class="kw"><a href="reference/card.html">card_html</a></span>(<span class="st">"Jh"</span>), <span class="kw"><a href="reference/card.html">card_html</a></span>(<span class="st">"As"</span>), <span class="kw"><a href="reference/card.html">card_html</a></span>(<span class="st">"Tc"</span>), <span class="kw"><a href="reference/card.html">card_html</a></span>(<span class="st">"2d"</span>))</a></code></pre></div>
-<p><img src="README_figures/JhAsTc2d.png"></p>
+<p><img src="reference/figures/README_figures/JhAsTc2d.png"></p>
 <p><code><a href="reference/card.html">card_unicode()</a></code> converts cards into a unicode representation which means they can be printed directly into the console.</p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" data-line-number="1"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/cat">cat</a></span>(<span class="kw"><a href="reference/card.html">card_unicode</a></span>(<span class="st">"Ad"</span>))</a>
 <a class="sourceLine" id="cb3-2" data-line-number="2"><span class="co">#&gt; 🃁</span></a></code></pre></div>
@@ -96,9 +96,9 @@
 <a class="sourceLine" id="cb4-4" data-line-number="4"><span class="co">#&gt; [29] "9s" "9h" "9c" "9d" "Ts" "Th" "Tc" "Td" "Js" "Jh" "Jc" "Jd" "Qs" "Qh"</span></a>
 <a class="sourceLine" id="cb4-5" data-line-number="5"><span class="co">#&gt; [43] "Qc" "Qd" "Ks" "Kh" "Kc" "Kd" "As" "Ah" "Ac" "Ad"</span></a></code></pre></div>
 <div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb5-1" data-line-number="1"><span class="kw"><a href="reference/card.html">card_list</a></span>() <span class="op">%&gt;%</span><span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/lapply">lapply</a></span>(card_html, <span class="dt">size =</span> <span class="dv">50</span>) <span class="op">%&gt;%</span><span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/htmltools/topics/builder">span</a></span>()</a></code></pre></div>
-<p><img src="README_figures/deck_4c.png"></p>
+<p><img src="reference/figures/README_figures/deck_4c.png"></p>
 <div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb6-1" data-line-number="1"><span class="kw"><a href="reference/card.html">card_list</a></span>() <span class="op">%&gt;%</span><span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/lapply">lapply</a></span>(card_html, <span class="dt">size =</span> <span class="dv">50</span>, <span class="dt">fourColor =</span> <span class="ot">FALSE</span>) <span class="op">%&gt;%</span><span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/htmltools/topics/builder">span</a></span>()</a></code></pre></div>
-<p><img src="README_figures/deck_2c.png"></p>
+<p><img src="reference/figures/README_figures/deck_2c.png"></p>
 </div>
 <div id="suits" class="section level2">
 <h2 class="hasAnchor">
@@ -107,9 +107,9 @@
 <div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb7-1" data-line-number="1"><span class="kw"><a href="reference/suit.html">suit_list</a></span>()</a>
 <a class="sourceLine" id="cb7-2" data-line-number="2"><span class="co">#&gt; [1] "s" "h" "c" "d"</span></a></code></pre></div>
 <div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb8-1" data-line-number="1"><span class="kw"><a href="reference/suit.html">suit_list</a></span>() <span class="op">%&gt;%</span><span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/lapply">lapply</a></span>(suit_html) <span class="op">%&gt;%</span><span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/htmltools/topics/builder">span</a></span>()</a></code></pre></div>
-<p><img src="README_figures/suits_filled.png"></p>
+<p><img src="reference/figures/README_figures/suits_filled.png"></p>
 <div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb9-1" data-line-number="1"><span class="kw"><a href="reference/suit.html">suit_list</a></span>() <span class="op">%&gt;%</span><span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/lapply">lapply</a></span>(suit_html, <span class="dt">fill =</span> <span class="ot">FALSE</span>) <span class="op">%&gt;%</span><span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/htmltools/topics/builder">span</a></span>()</a></code></pre></div>
-<p><img src="README_figures/suits_unfilled.png"></p>
+<p><img src="reference/figures/README_figures/suits_unfilled.png"></p>
 <div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb10-1" data-line-number="1"><span class="kw"><a href="reference/suit.html">suit_list</a></span>() <span class="op">%&gt;%</span><span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/lapply">sapply</a></span>(suit_unicode) <span class="op">%&gt;%</span><span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/cat">cat</a></span>()</a>
 <a class="sourceLine" id="cb10-2" data-line-number="2"><span class="co">#&gt; ♠ ♥ ♣ ♦</span></a></code></pre></div>
 </div>
@@ -119,13 +119,13 @@
 <p>Tere are currently 3 “special” cards implemented which do not match the rank-suit pattern of the cards above. Those are wrapped into a named list which can be obtained with <code><a href="reference/card.html">card_specials()</a></code>.</p>
 <div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb11-1" data-line-number="1"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/names">names</a></span>(<span class="kw"><a href="reference/card.html">card_specials</a></span>())</a>
 <a class="sourceLine" id="cb11-2" data-line-number="2"><span class="kw"><a href="reference/card.html">card_specials</a></span>() <span class="op">%&gt;%</span><span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/lapply">lapply</a></span>(unicode_html, <span class="dt">style =</span> <span class="st">"color: blue;"</span>) <span class="op">%&gt;%</span><span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/htmltools/topics/builder">span</a></span>()</a></code></pre></div>
-<p><img src="README_figures/cards_special.png"></p>
+<p><img src="reference/figures/README_figures/cards_special.png"></p>
 </div>
 <div id="dice" class="section level2">
 <h2 class="hasAnchor">
 <a href="#dice" class="anchor"></a>Dice</h2>
 <div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb12-1" data-line-number="1"><span class="dv">1</span><span class="op">:</span><span class="dv">6</span> <span class="op">%&gt;%</span><span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/lapply">lapply</a></span>(dice_html, <span class="dt">size =</span> <span class="dv">140</span>) <span class="op">%&gt;%</span><span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/htmltools/topics/builder">span</a></span>()</a></code></pre></div>
-<p><img src="README_figures/dice.png"></p>
+<p><img src="reference/figures/README_figures/dice.png"></p>
 </div>
 <div id="chess" class="section level2">
 <h2 class="hasAnchor">
@@ -133,9 +133,9 @@
 <div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb13-1" data-line-number="1"><span class="kw"><a href="reference/chess.html">pieces_list</a></span>()</a>
 <a class="sourceLine" id="cb13-2" data-line-number="2"><span class="co">#&gt; [1] "k" "q" "r" "b" "n" "p"</span></a></code></pre></div>
 <div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb14-1" data-line-number="1"><span class="kw"><a href="reference/chess.html">pieces_list</a></span>() <span class="op">%&gt;%</span><span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/lapply">lapply</a></span>(chess_html, <span class="dt">size =</span> <span class="dv">140</span>) <span class="op">%&gt;%</span><span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/htmltools/topics/builder">span</a></span>()</a></code></pre></div>
-<p><img src="README_figures/pieces_white.png"></p>
+<p><img src="reference/figures/README_figures/pieces_white.png"></p>
 <div class="sourceCode" id="cb15"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb15-1" data-line-number="1"><span class="kw"><a href="reference/chess.html">pieces_list</a></span>() <span class="op">%&gt;%</span><span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/lapply">lapply</a></span>(chess_html, <span class="dt">color =</span> <span class="st">"black"</span>, <span class="dt">size =</span> <span class="dv">140</span>) <span class="op">%&gt;%</span><span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/htmltools/topics/builder">span</a></span>()</a></code></pre></div>
-<p><img src="README_figures/pieces_black.png"></p>
+<p><img src="reference/figures/README_figures/pieces_black.png"></p>
 </div>
 <div id="mahjong" class="section level2">
 <h2 class="hasAnchor">
@@ -143,13 +143,13 @@
 <div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb16-1" data-line-number="1"><span class="kw"><a href="reference/mahjong.html">mahjong_list</a></span>()[<span class="dv">1</span><span class="op">:</span><span class="dv">4</span>]</a>
 <a class="sourceLine" id="cb16-2" data-line-number="2"><span class="co">#&gt; [1] "east wind"  "south wind" "west wind"  "north wind"</span></a></code></pre></div>
 <div class="sourceCode" id="cb17"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb17-1" data-line-number="1"><span class="kw"><a href="reference/mahjong.html">mahjong_list</a></span>() <span class="op">%&gt;%</span><span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/lapply">lapply</a></span>(mahjong_html, <span class="dt">size =</span> <span class="dv">68</span>) <span class="op">%&gt;%</span><span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/htmltools/topics/builder">span</a></span>()</a></code></pre></div>
-<p><img src="README_figures/mahjong.png"></p>
+<p><img src="reference/figures/README_figures/mahjong.png"></p>
 </div>
 <div id="domino" class="section level2">
 <h2 class="hasAnchor">
 <a href="#domino" class="anchor"></a>Domino</h2>
 <div class="sourceCode" id="cb18"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb18-1" data-line-number="1"><span class="kw"><a href="https://www.rdocumentation.org/packages/htmltools/topics/builder">span</a></span>(<span class="kw"><a href="reference/domino.html">domino_html</a></span>(<span class="dv">4</span>, <span class="dv">5</span>), <span class="kw"><a href="reference/domino.html">domino_html</a></span>(<span class="dv">0</span>, <span class="dv">6</span>), <span class="kw"><a href="reference/domino.html">domino_html</a></span>(<span class="dv">6</span>, <span class="dv">2</span>, <span class="dt">horizontal =</span> <span class="ot">FALSE</span>))</a></code></pre></div>
-<p><img src="README_figures/domino.png"></p>
+<p><img src="reference/figures/README_figures/domino.png"></p>
 </div>
 <div id="draughts" class="section level2">
 <h2 class="hasAnchor">
@@ -185,7 +185,7 @@
 <h2>Dev status</h2>
 <ul class="list-unstyled">
 <li><a href="https://codecov.io/github/GregorDeCillia/suitr?branch=master"><img src="https://codecov.io/gh/GregorDeCillia/suitr/branch/master/graph/badge.svg" alt="Coverage status"></a></li>
-<li><a href="https://travis-ci.org/GregorDeCillia/suitr"><img src="https://travis-ci.org/GregorDeCillia/suitr.svg?branch=master" alt="Travis build status"></a></li>
+<li><a href="https://travis-ci.org/GregorDeCillia/suitr"><img src="https://img.shields.io/travis/statistikat/persephone.svg?logo=travis" alt="Travis build status"></a></li>
 <li><a href="https://ci.appveyor.com/project/GregorDeCillia/suitr"><img src="https://ci.appveyor.com/api/projects/status/github/GregorDeCillia/suitr?branch=master&amp;svg=true" alt="AppVeyor Build Status"></a></li>
 </ul>
 </div>
