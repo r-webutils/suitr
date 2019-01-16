@@ -111,11 +111,11 @@
 
 <span class='fu'>suit_unicode</span>(<span class='kw'>suit</span> <span class='kw'>=</span> <span class='fu'>suit_list</span>(), <span class='kw'>fill</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>)
 
-<span class='fu'>suit_color</span>(<span class='kw'>suit</span> <span class='kw'>=</span> <span class='fu'>suit_list</span>(), <span class='kw'>fourColor</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>)
+<span class='fu'>suit_color</span>(<span class='kw'>suit</span> <span class='kw'>=</span> <span class='fu'>suit_list</span>(), <span class='kw'>four_color</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>)
 
-<span class='fu'>suit_style</span>(<span class='no'>suit</span>, <span class='kw'>fourColor</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>)
+<span class='fu'>suit_style</span>(<span class='no'>suit</span>, <span class='kw'>four_color</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>)
 
-<span class='fu'>suit_html</span>(<span class='kw'>suit</span> <span class='kw'>=</span> <span class='fu'>suit_list</span>(), <span class='kw'>size</span> <span class='kw'>=</span> <span class='fl'>172</span>, <span class='kw'>fourColor</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>,
+<span class='fu'>suit_html</span>(<span class='kw'>suit</span> <span class='kw'>=</span> <span class='fu'>suit_list</span>(), <span class='kw'>size</span> <span class='kw'>=</span> <span class='fl'>172</span>, <span class='kw'>four_color</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>,
   <span class='kw'>fill</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>)</pre>
     
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
@@ -131,7 +131,7 @@
 unfilled one like <code>WHITE SPADE SUIT</code></p></td>
     </tr>
     <tr>
-      <th>fourColor</th>
+      <th>four_color</th>
       <td><p>should a four color deck be applied. This means that each suit will have
 it's own color (black, red, blue and green). Otherwise, use two colors (black and red).</p></td>
     </tr>
@@ -146,7 +146,7 @@ it's own color (black, red, blue and green). Otherwise, use two colors (black an
     <pre class="examples"><div class='input'><span class='co'># show all valid suits</span>
 <span class='fu'>suit_list</span>()</div><div class='output co'>#&gt; [1] "s" "h" "c" "d"</div><div class='input'>
 <span class='co'># determine matching colors for the suit</span>
-<span class='fu'>suit_color</span>(<span class='st'>"d"</span>)</div><div class='output co'>#&gt; [1] "blue"</div><div class='input'><span class='fu'>suit_color</span>(<span class='st'>"d"</span>, <span class='kw'>fourColor</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>)</div><div class='output co'>#&gt; [1] "red"</div><div class='input'>
+<span class='fu'>suit_color</span>(<span class='st'>"d"</span>)</div><div class='output co'>#&gt; [1] "blue"</div><div class='input'><span class='fu'>suit_color</span>(<span class='st'>"d"</span>, <span class='kw'>four_color</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>)</div><div class='output co'>#&gt; [1] "red"</div><div class='input'>
 <span class='co'># show suits either in the console or as HTML</span>
 <span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/cat'>cat</a></span>(<span class='fu'>suit_unicode</span>(<span class='st'>"c"</span>), <span class='st'>"\n"</span>)</div><div class='output co'>#&gt; ♣ </div><div class='input'><span class='fu'>suit_html</span>(<span class='st'>"c"</span>)
 <span class='fu'>suit_html</span>(<span class='st'>"c"</span>, <span class='kw'>fill</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>)

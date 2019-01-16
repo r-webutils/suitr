@@ -113,11 +113,11 @@
 
 <span class='fu'>card_rank</span>(<span class='kw'>card</span> <span class='kw'>=</span> <span class='fu'>card_list</span>())
 
-<span class='fu'>card_style</span>(<span class='kw'>card</span> <span class='kw'>=</span> <span class='fu'>card_list</span>(), <span class='kw'>fourColor</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>)
+<span class='fu'>card_style</span>(<span class='kw'>card</span> <span class='kw'>=</span> <span class='fu'>card_list</span>(), <span class='kw'>four_color</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>)
 
-<span class='fu'>card_color</span>(<span class='kw'>card</span> <span class='kw'>=</span> <span class='fu'>card_list</span>(), <span class='kw'>fourColor</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>)
+<span class='fu'>card_color</span>(<span class='kw'>card</span> <span class='kw'>=</span> <span class='fu'>card_list</span>(), <span class='kw'>four_color</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>)
 
-<span class='fu'>card_html</span>(<span class='kw'>card</span> <span class='kw'>=</span> <span class='fu'>card_list</span>(), <span class='kw'>size</span> <span class='kw'>=</span> <span class='fl'>172</span>, <span class='kw'>fourColor</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>)
+<span class='fu'>card_html</span>(<span class='kw'>card</span> <span class='kw'>=</span> <span class='fu'>card_list</span>(), <span class='kw'>size</span> <span class='kw'>=</span> <span class='fl'>172</span>, <span class='kw'>four_color</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>)
 
 <span class='fu'>card_specials</span>()
 
@@ -133,7 +133,7 @@
       <td><p>a card. A list of availale cards can be found with <code>card_list()</code></p></td>
     </tr>
     <tr>
-      <th>fourColor</th>
+      <th>four_color</th>
       <td><p>should a four color deck be applied. This means that each suit will have
 it's own color (black, red, blue and green). Otherwise, use two colors (black and red).</p></td>
     </tr>
@@ -151,7 +151,7 @@ it's own color (black, red, blue and green). Otherwise, use two colors (black an
 #&gt; [31] "9c" "9d" "Ts" "Th" "Tc" "Td" "Js" "Jh" "Jc" "Jd" "Qs" "Qh" "Qc" "Qd" "Ks"
 #&gt; [46] "Kh" "Kc" "Kd" "As" "Ah" "Ac" "Ad"</div><div class='input'>
 <span class='co'># determine rank and suit and color</span>
-<span class='fu'>card_rank</span>(<span class='st'>"Jc"</span>)</div><div class='output co'>#&gt; [1] "J"</div><div class='input'><span class='fu'>card_suit</span>(<span class='st'>"7d"</span>)</div><div class='output co'>#&gt; [1] "d"</div><div class='input'><span class='fu'>card_color</span>(<span class='st'>"Ad"</span>)</div><div class='output co'>#&gt; [1] "blue"</div><div class='input'><span class='fu'>card_color</span>(<span class='st'>"Ad"</span>, <span class='kw'>fourColor</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>)</div><div class='output co'>#&gt; [1] "red"</div><div class='input'>
+<span class='fu'>card_rank</span>(<span class='st'>"Jc"</span>)</div><div class='output co'>#&gt; [1] "J"</div><div class='input'><span class='fu'>card_suit</span>(<span class='st'>"7d"</span>)</div><div class='output co'>#&gt; [1] "d"</div><div class='input'><span class='fu'>card_color</span>(<span class='st'>"Ad"</span>)</div><div class='output co'>#&gt; [1] "blue"</div><div class='input'><span class='fu'>card_color</span>(<span class='st'>"Ad"</span>, <span class='kw'>four_color</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>)</div><div class='output co'>#&gt; [1] "red"</div><div class='input'>
 <span class='co'># style cards either in the console or via HTML</span>
 <span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/cat'>cat</a></span>(<span class='fu'>card_unicode</span>(<span class='st'>"5h"</span>), <span class='st'>"\n"</span>)</div><div class='output co'>#&gt; 🂵 </div><div class='input'><span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/cat'>cat</a></span>(<span class='fu'>card_style</span>(<span class='st'>"5h"</span>), <span class='st'>"\n"</span>)</div><div class='output co'>#&gt; 🂵 </div><div class='input'><span class='fu'>card_html</span>(<span class='st'>"5h"</span>)
 
