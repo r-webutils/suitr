@@ -26,7 +26,7 @@ library(suitr)
 span(card_html("Jh"), card_html("As"), card_html("Tc"), card_html("2d"))
 ```
 
-![](README_figures/JhAsTc2d.png)
+![](man/figures/README_figures/JhAsTc2d.png)
 
 `card_unicode()` converts cards into a unicode representation which means they can be printed directly into the console.
 
@@ -49,13 +49,13 @@ card_list()
 card_list() %>% lapply(card_html, size = 50) %>% span()
 ```
 
-![](README_figures/deck_4c.png)
+![](man/figures/README_figures/deck_4c.png)
 
 ``` r
 card_list() %>% lapply(card_html, size = 50, fourColor = FALSE) %>% span()
 ```
 
-![](README_figures/deck_2c.png)
+![](man/figures/README_figures/deck_2c.png)
 
 Suits
 -----
@@ -71,13 +71,13 @@ suit_list()
 suit_list() %>% lapply(suit_html) %>% span()
 ```
 
-![](README_figures/suits_filled.png)
+![](man/figures/README_figures/suits_filled.png)
 
 ``` r
 suit_list() %>% lapply(suit_html, fill = FALSE) %>% span()
 ```
 
-![](README_figures/suits_unfilled.png)
+![](man/figures/README_figures/suits_unfilled.png)
 
 ``` r
 suit_list() %>% sapply(suit_unicode) %>% cat()
@@ -94,7 +94,7 @@ names(card_specials())
 card_specials() %>% lapply(unicode_html, style = "color: blue;") %>% span()
 ```
 
-![](README_figures/cards_special.png)
+![](man/figures/README_figures/cards_special.png)
 
 Dice
 ----
@@ -103,7 +103,7 @@ Dice
 1:6 %>% lapply(dice_html, size = 140) %>% span()
 ```
 
-![](README_figures/dice.png)
+![](man/figures/README_figures/dice.png)
 
 Chess
 -----
@@ -117,13 +117,13 @@ pieces_list()
 pieces_list() %>% lapply(chess_html, size = 140) %>% span()
 ```
 
-![](README_figures/pieces_white.png)
+![](man/figures/README_figures/pieces_white.png)
 
 ``` r
 pieces_list() %>% lapply(chess_html, color = "black", size = 140) %>% span()
 ```
 
-![](README_figures/pieces_black.png)
+![](man/figures/README_figures/pieces_black.png)
 
 Mahjong
 -------
@@ -137,7 +137,7 @@ mahjong_list()[1:4]
 mahjong_list() %>% lapply(mahjong_html, size = 68) %>% span()
 ```
 
-![](README_figures/mahjong.png)
+![](man/figures/README_figures/mahjong.png)
 
 Domino
 ------
@@ -146,7 +146,7 @@ Domino
 span(domino_html(4, 5), domino_html(0, 6), domino_html(6, 2, horizontal = FALSE))
 ```
 
-![](README_figures/domino.png)
+![](man/figures/README_figures/domino.png)
 
 Draughts
 --------
