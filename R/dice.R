@@ -26,5 +26,7 @@ dice_unicode <- function(number = 1:6) {
 #' @inheritParams unicode_html
 #' @export
 dice_html <- function(number = 1:6, size = 172) {
-  number %>% dice_unicode %>% unicode_html(size)
+  number %>%
+    dice_unicode() %>%
+    unicode_html(size)
 }
