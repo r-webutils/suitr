@@ -4,21 +4,20 @@ language: R
 sudo: false
 cache: packages
 
-r_github_packages: r-lib/pkgdown
-
-deploy:
-  provider: script
-  script: Rscript -e 'pkgdown::deploy_site_github()'
-  skip_cleanup: true
-
 r:
 - release
 - devel
+
+r_github_packages:
+  - jimhester/lintr
+  - r-lib/pkgdown
 
 after_success:
   - R CMD INSTALL $PKG_TARBALL
   - Rscript -e 'covr::codecov()'
   - Rscript -e 'lintr::lint_package()'
 
-r_github_packages:
-  - jimhester/lintr
+deploy:
+  provider: script
+  script: Rscript -e 'pkgdown::deploy_site_github()'
+  skip_cleanup: true
