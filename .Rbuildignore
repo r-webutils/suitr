@@ -3,7 +3,7 @@
 ^LICENSE\.md$
 ^README\.Rmd$
 ^docs$
-^_pkgdown\.yml$
+^pkgdown$
 ^.*\.Rproj$
 ^\.Rproj\.user$
 ^appveyor\.yml$
