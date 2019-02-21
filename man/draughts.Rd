@@ -15,12 +15,12 @@ draughts_html(color = c("white", "black"), status = c("man", "king"),
 \item{color}{A color to be used. Black or white}
 
 \item{status}{A status of the checker. Use \code{man} for a single
-checker and `king`` for a doule checker}
+checker and `king`` for a double checker}
 
 \item{size}{the font-size to use}
 }
 \description{
-Functions to create unicode draughts pieces and export them
+Functions to create Unicode draughts pieces and export them
 to HTML
 }
 \examples{

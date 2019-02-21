@@ -21,7 +21,7 @@ chess_html(piece = pieces_list(), color = c("white", "black"),
 \item{size}{the font-size to use}
 }
 \description{
-Functions to create unicode chess pieces and export them to HTML
+Functions to create Unicode chess pieces and export them to HTML
 }
 \examples{
 cat(chess_unicode("k"))

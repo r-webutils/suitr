@@ -34,7 +34,7 @@ domino_matrix2 <- data.frame(
 
 #' domino pieces
 #'
-#' create unicode representation of domino pieces and export to HTML.
+#' create Unicode representation of domino pieces and export to HTML.
 #'
 #' @rdname domino
 #'

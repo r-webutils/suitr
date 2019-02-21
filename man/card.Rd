@@ -31,7 +31,7 @@ card_htmlhex(card = card_list())
 card_unicode(card = card_list())
 }
 \arguments{
-\item{card}{a card. A list of availale cards can be found with \code{card_list()}}
+\item{card}{a card. A list of available cards can be found with \code{card_list()}}
 
 \item{four_color}{should a four color deck be applied. This means that each suit will have
 it's own color (black, red, blue and green). Otherwise, use two colors (black and red).}

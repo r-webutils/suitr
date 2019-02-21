@@ -5,12 +5,12 @@ suitr <img src="man/figures/logo.png" align="right" alt=""/>
 
 [![Coverage status](https://codecov.io/gh/GregorDeCillia/suitr/branch/master/graph/badge.svg)](https://codecov.io/github/GregorDeCillia/suitr?branch=master) [![Travis build status](https://img.shields.io/travis/statistikat/persephone.svg?logo=travis)](https://travis-ci.org/GregorDeCillia/suitr) [![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/GregorDeCillia/suitr?branch=master&svg=true)](https://ci.appveyor.com/project/GregorDeCillia/suitr)
 
-This package makes it easy to create cards in R either for printing in the console or for html export. The logic is based aroud the unicode representation of cards (and other objects) which are wrapped in a span container.
+This package makes it easy to create cards in R either for printing in the console or for html export. The logic is based around the Unicode representation of cards (and other objects) which are wrapped in a span container.
 
 Installation
 ------------
 
-You can install suitr from github via `install_github()`
+You can install suitr from GitHub via `install_github()`
 
 ``` r
 devtools::install_github("GregorDeCillia/suitr")
@@ -28,7 +28,7 @@ span(card_html("Jh"), card_html("As"), card_html("Tc"), card_html("2d"))
 
 ![](man/figures/README_figures/JhAsTc2d.png)
 
-`card_unicode()` converts cards into a unicode representation which means they can be printed directly into the console.
+`card_unicode()` converts cards into a Unicode representation which means they can be printed directly into the console.
 
 ``` r
 cat(card_unicode("Ad"))
@@ -60,7 +60,7 @@ card_list() %>% lapply(card_html, size = 50, four_color = FALSE) %>% span()
 Suits
 -----
 
-It is also possible to get the unicode representation of the suits symbols and export them into html.
+It is also possible to get the Unicode representation of the suits symbols and export them into html.
 
 ``` r
 suit_list()
@@ -87,7 +87,7 @@ suit_list() %>% sapply(suit_unicode) %>% cat()
 Special cards
 -------------
 
-Tere are currently 3 "special" cards implemented which do not match the rank-suit pattern of the cards above. Those are wrapped into a named list which can be obtained with `card_specials()`.
+There are currently 3 "special" cards implemented which do not match the rank-suit pattern of the cards above. Those are wrapped into a named list which can be obtained with `card_specials()`.
 
 ``` r
 names(card_specials())

@@ -18,7 +18,7 @@ mahjong_html(tile = mahjong_list(), size = 172)
 \item{size}{the font-size to use}
 }
 \description{
-create unicode representations of mahjong tiles and export to HTML
+create Unicode representations of mahjong tiles and export to HTML
 }
 \examples{
 mahjong_html("autumn")

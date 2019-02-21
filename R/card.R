@@ -2,7 +2,7 @@
 #'
 #' Functions that extract information from a card
 #'
-#' @param card a card. A list of availale cards can be found with `card_list()`
+#' @param card a card. A list of available cards can be found with `card_list()`
 #' @inheritParams suit_color
 #' @inheritParams unicode_html
 #'

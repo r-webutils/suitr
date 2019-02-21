@@ -2,7 +2,7 @@
 % Please edit documentation in R/A_unicode_html.R
 \name{unicode_html}
 \alias{unicode_html}
-\title{convert a unicode string into browsable html}
+\title{convert a Unicode string into browsable html}
 \usage{
 unicode_html(x, size = 172, style = "")
 }
@@ -14,5 +14,5 @@ unicode_html(x, size = 172, style = "")
 \item{style}{a sting appended to the style attribute of the resulting \code{span}.}
 }
 \description{
-convert a unicode string into browsable html
+convert a Unicode string into browsable html
 }

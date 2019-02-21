@@ -20,7 +20,7 @@ domino_html(first = 0:6, second = 0:6, horizontal = TRUE,
 \item{size}{the font-size to use}
 }
 \description{
-create unicode representation of domino pieces and export to HTML.
+create Unicode representation of domino pieces and export to HTML.
 }
 \examples{
 domino_html(5, 6)

@@ -7,8 +7,8 @@ Author: Gregor de Cillia
 Authors@R: c(person("Gregor", "de Cillia", role = c("aut", "cre"),
                     email = "de.cillia.gregor@gmail.com"))
 Maintainer: Gregor de Cillia <de.cillia.gregor@gmail.com>
-Description: A collection of converter functions to obtain the unicode representation
-  of playing cards, chess pieces and more. The resulting strigs can also converted
+Description: A collection of converter functions to obtain the Unicode representation
+  of playing cards, chess pieces and more. The resulting strings can also converted
   into browsable html objects.
 License: MIT + file LICENSE
 Encoding: UTF-8
@@ -20,3 +20,4 @@ BugReports: https://www.github.com/GregorDeCillia/suitr/issues
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 6.1.1
 Depends: R (>= 3.1)
+Language: en-US

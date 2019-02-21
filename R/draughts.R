@@ -1,6 +1,6 @@
 #' draughts pieces
 #'
-#' Functions to create unicode draughts pieces and export them
+#' Functions to create Unicode draughts pieces and export them
 #' to HTML
 #'
 #' @examples
@@ -9,7 +9,7 @@
 #'
 #' @param color A color to be used. Black or white
 #' @param status A status of the checker. Use `man` for a single
-#'   checker and `king`` for a doule checker
+#'   checker and `king`` for a double checker
 #'
 #' @rdname draughts
 #' @export

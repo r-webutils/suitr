@@ -46,7 +46,7 @@ mahjong_mapping <- list(
 
 #' mahjong tiles
 #'
-#' create unicode representations of mahjong tiles and export to HTML
+#' create Unicode representations of mahjong tiles and export to HTML
 #'
 #' @rdname mahjong
 #' @export

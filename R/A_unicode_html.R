@@ -1,4 +1,4 @@
-#' convert a unicode string into browsable html
+#' convert a Unicode string into browsable html
 #'
 #' @param x a string to be wrapped
 #' @param size the font-size to use
