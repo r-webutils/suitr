@@ -25,8 +25,9 @@ suit_html(suit = suit_list(), size = 172, four_color = TRUE,
 \item{fill}{whether to use a filled suit symbol like \code{BLACK SPADE SUIT} or an
 unfilled one like \code{WHITE SPADE SUIT}}
 
-\item{four_color}{should a four color deck be applied. This means that each suit will have
-it's own color (black, red, blue and green). Otherwise, use two colors (black and red).}
+\item{four_color}{should a four color deck be applied. This means that each
+suit will have it's own color (black, red, blue and green). Otherwise, use
+two colors (black and red).}
 
 \item{size}{the font-size to use}
 }

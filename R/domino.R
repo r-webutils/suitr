@@ -38,8 +38,10 @@ domino_matrix2 <- data.frame(
 #'
 #' @rdname domino
 #'
-#' @param first the first number to appear in the domino. Valid values: 0,1,...,6
-#' @param second the second number to appear in the domino. Valid values: 0,1,...,6
+#' @param first the first number to appear in the domino. Valid values:
+#'   0, 1, ..., 6
+#' @param second the second number to appear in the domino. Valid values:
+#'   0, 1, ..., 6
 #' @param horizontal whether to use horizontal or vertical alignment
 #' @examples
 #' domino_html(5, 6)

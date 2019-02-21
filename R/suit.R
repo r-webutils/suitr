@@ -3,8 +3,9 @@
 #' Functions that extract suit symbols and suit colors from a given suit
 #'
 #' @param suit one of the suits listed in `list_suits()`
-#' @param four_color should a four color deck be applied. This means that each suit will have
-#'   it's own color (black, red, blue and green). Otherwise, use two colors (black and red).
+#' @param four_color should a four color deck be applied. This means that each
+#'   suit will have it's own color (black, red, blue and green). Otherwise, use
+#'   two colors (black and red).
 #' @param fill whether to use a filled suit symbol like `BLACK SPADE SUIT` or an
 #'   unfilled one like `WHITE SPADE SUIT`
 #' @inheritParams unicode_html

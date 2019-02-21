@@ -5,7 +5,8 @@
 #'
 #' @examples
 #' span(draughts_html("white", "man"), draughts_html("white", "king"),
-#'      draughts_html("black", "man"), draughts_html("black", "king")) %>% browsable()
+#'      draughts_html("black", "man"), draughts_html("black", "king")) %>%
+#'   browsable()
 #'
 #' @param color A color to be used. Black or white
 #' @param status A status of the checker. Use `man` for a single

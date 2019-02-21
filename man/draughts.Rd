@@ -25,6 +25,7 @@ to HTML
 }
 \examples{
 span(draughts_html("white", "man"), draughts_html("white", "king"),
-     draughts_html("black", "man"), draughts_html("black", "king")) \%>\% browsable()
+     draughts_html("black", "man"), draughts_html("black", "king")) \%>\%
+  browsable()
 
 }

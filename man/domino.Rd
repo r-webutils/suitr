@@ -11,9 +11,11 @@ domino_html(first = 0:6, second = 0:6, horizontal = TRUE,
   size = 172)
 }
 \arguments{
-\item{first}{the first number to appear in the domino. Valid values: 0,1,...,6}
+\item{first}{the first number to appear in the domino. Valid values:
+0, 1, ..., 6}
 
-\item{second}{the second number to appear in the domino. Valid values: 0,1,...,6}
+\item{second}{the second number to appear in the domino. Valid values:
+0, 1, ..., 6}
 
 \item{horizontal}{whether to use horizontal or vertical alignment}
 
