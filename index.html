@@ -19,8 +19,8 @@
 <script src="pkgdown.js"></script><link href="extra.css" rel="stylesheet">
 <meta property="og:title" content="This Package Makes It Easy to Create Cards in R Either for Printing in 
   The Console or for Html Export">
-<meta property="og:description" content="A collection of converter functions to obtain the unicode representation
-  of playing cards, chess pieces and more. The resulting strigs can also converted
+<meta property="og:description" content="A collection of converter functions to obtain the Unicode representation
+  of playing cards, chess pieces and more. The resulting strings can also converted
   into browsable html objects.">
 <meta property="og:image" content="/logo.png">
 <meta name="twitter:card" content="summary">
@@ -79,11 +79,11 @@
 <a href="#suitr" class="anchor"></a>suitr <img src="reference/figures/logo.png" align="right" alt="">
 </h1></div>
 
-<p>This package makes it easy to create cards in R either for printing in the console or for html export. The logic is based aroud the unicode representation of cards (and other objects) which are wrapped in a span container.</p>
+<p>This package makes it easy to create cards in R either for printing in the console or for html export. The logic is based around the Unicode representation of cards (and other objects) which are wrapped in a span container.</p>
 <div id="installation" class="section level2">
 <h2 class="hasAnchor">
 <a href="#installation" class="anchor"></a>Installation</h2>
-<p>You can install suitr from github via <code>install_github()</code></p>
+<p>You can install suitr from GitHub via <code>install_github()</code></p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1">devtools<span class="op">::</span><span class="kw"><a href="https://www.rdocumentation.org/packages/devtools/topics/reexports">install_github</a></span>(<span class="st">"GregorDeCillia/suitr"</span>)</a></code></pre></div>
 </div>
 <div id="cards" class="section level2">
@@ -93,7 +93,7 @@
 <div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" data-line-number="1"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/library">library</a></span>(suitr)</a>
 <a class="sourceLine" id="cb2-2" data-line-number="2"><span class="kw"><a href="https://www.rdocumentation.org/packages/htmltools/topics/builder">span</a></span>(<span class="kw"><a href="reference/card.html">card_html</a></span>(<span class="st">"Jh"</span>), <span class="kw"><a href="reference/card.html">card_html</a></span>(<span class="st">"As"</span>), <span class="kw"><a href="reference/card.html">card_html</a></span>(<span class="st">"Tc"</span>), <span class="kw"><a href="reference/card.html">card_html</a></span>(<span class="st">"2d"</span>))</a></code></pre></div>
 <p><img src="reference/figures/README_figures/JhAsTc2d.png"></p>
-<p><code><a href="reference/card.html">card_unicode()</a></code> converts cards into a unicode representation which means they can be printed directly into the console.</p>
+<p><code><a href="reference/card.html">card_unicode()</a></code> converts cards into a Unicode representation which means they can be printed directly into the console.</p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" data-line-number="1"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/cat">cat</a></span>(<span class="kw"><a href="reference/card.html">card_unicode</a></span>(<span class="st">"Ad"</span>))</a>
 <a class="sourceLine" id="cb3-2" data-line-number="2"><span class="co">#&gt; 🃁</span></a></code></pre></div>
 <p>suitr uses a four color deck by default. This behavior can be changed with the parameter <code>four_color</code>.</p>
@@ -110,7 +110,7 @@
 <div id="suits" class="section level2">
 <h2 class="hasAnchor">
 <a href="#suits" class="anchor"></a>Suits</h2>
-<p>It is also possible to get the unicode representation of the suits symbols and export them into html.</p>
+<p>It is also possible to get the Unicode representation of the suits symbols and export them into html.</p>
 <div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb7-1" data-line-number="1"><span class="kw"><a href="reference/suit.html">suit_list</a></span>()</a>
 <a class="sourceLine" id="cb7-2" data-line-number="2"><span class="co">#&gt; [1] "s" "h" "c" "d"</span></a></code></pre></div>
 <div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb8-1" data-line-number="1"><span class="kw"><a href="reference/suit.html">suit_list</a></span>() <span class="op">%&gt;%</span><span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/lapply">lapply</a></span>(suit_html) <span class="op">%&gt;%</span><span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/htmltools/topics/builder">span</a></span>()</a></code></pre></div>
@@ -123,7 +123,7 @@
 <div id="special-cards" class="section level2">
 <h2 class="hasAnchor">
 <a href="#special-cards" class="anchor"></a>Special cards</h2>
-<p>Tere are currently 3 “special” cards implemented which do not match the rank-suit pattern of the cards above. Those are wrapped into a named list which can be obtained with <code><a href="reference/card.html">card_specials()</a></code>.</p>
+<p>There are currently 3 “special” cards implemented which do not match the rank-suit pattern of the cards above. Those are wrapped into a named list which can be obtained with <code><a href="reference/card.html">card_specials()</a></code>.</p>
 <div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb11-1" data-line-number="1"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/names">names</a></span>(<span class="kw"><a href="reference/card.html">card_specials</a></span>())</a>
 <a class="sourceLine" id="cb11-2" data-line-number="2"><span class="kw"><a href="reference/card.html">card_specials</a></span>() <span class="op">%&gt;%</span><span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/lapply">lapply</a></span>(unicode_html, <span class="dt">style =</span> <span class="st">"color: blue;"</span>) <span class="op">%&gt;%</span><span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/htmltools/topics/builder">span</a></span>()</a></code></pre></div>
 <p><img src="reference/figures/README_figures/cards_special.png"></p>
