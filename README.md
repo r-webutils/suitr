@@ -13,7 +13,7 @@ Installation
 You can install suitr from GitHub via `install_github()`
 
 ``` r
-devtools::install_github("GregorDeCillia/suitr")
+devtools::install_github("r-webutils/suitr")
 ```
 
 Cards
